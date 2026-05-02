@@ -7,7 +7,10 @@ Monorepo of [nicolas-luginbuhl.com](https://nicolas-luginbuhl.com) — a Builder
 - **Monorepo:** pnpm workspaces
 - **Apps:** Next.js 15 (App Router) + React 19 + TypeScript (strict)
 - **Styling:** Tailwind CSS v4
-- **Hosting:** Vercel (configured in a later phase)
+- **Hosting:** Vercel — 2 projects under scope `nicolas-projects-a113dfc5`
+  - `nicolas-luginbuhl-site` (rootDirectory: `apps/site`)
+  - `nicolas-luginbuhl-academy` (rootDirectory: `apps/academy`)
+- **CI/CD:** Vercel auto-deploys from GitHub `nicolascrm/nicolas-luginbuhl` (`main` → production, branches → preview)
 
 ## Structure
 
@@ -36,6 +39,13 @@ pnpm dev:academy  # academy only — http://localhost:3001
 - `pnpm lint` — lint both apps
 - `pnpm typecheck` — typecheck both apps
 
+## Live previews
+
+> Vercel Deployment Protection is currently enabled — visiting the URLs below requires Vercel auth (project owner). Will be disabled / opened to public when the custom domain is wired in Phase 5.
+
+- Site: https://nicolas-luginbuhl-site-rle4krlen-nicolas-projects-a113dfc5.vercel.app
+- Academy: https://nicolas-luginbuhl-academy-i4k0kdvje-nicolas-projects-a113dfc5.vercel.app
+
 ## Status
 
-Phase 1 / Plan 01-01 — Foundation. See `.paul/ROADMAP.md` for the full V1 roadmap.
+Phase 1 / Plan 01-03 — Foundation (Git + GitHub + Vercel infra). See `.paul/ROADMAP.md` for the full V1 roadmap.
